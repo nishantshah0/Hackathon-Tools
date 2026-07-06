@@ -16,7 +16,7 @@
     "./simulate": "./src/simulate.js"
   },
   "scripts": {
-    "test": "node --test test/",
+    "test": "node --test",
     "demo": "node bin/cli.js simulate examples/submissions.json --judges 5 --per-judge 8 --seed 1"
   },
   "engines": {
