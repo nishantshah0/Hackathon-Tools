@@ -1,0 +1,28 @@
+{
+  "name": "judge-assist",
+  "version": "1.0.0",
+  "description": "AI system to shorten hackathon judging time: AI judge briefs, pairwise comparison scheduling, Bradley-Terry ranking, and rubric score normalization",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "judge-assist": "bin/cli.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./brief": "./src/brief.js",
+    "./schedule": "./src/schedule.js",
+    "./rank": "./src/rank.js",
+    "./normalize": "./src/normalize.js",
+    "./simulate": "./src/simulate.js"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "demo": "node bin/cli.js simulate examples/submissions.json --judges 5 --per-judge 8 --seed 1"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.90.0"
+  }
+}
