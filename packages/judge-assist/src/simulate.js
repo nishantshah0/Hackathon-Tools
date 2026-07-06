@@ -30,8 +30,8 @@ export function simulate({ submissions, numJudges = 5, perJudge = 8, seed = 1, n
   const n = submissions.length;
   const quality = new Map(); // id -> true log-quality
   shuffled.forEach((subIdx, pos) => {
-    // Evenly spaced qualities over ~2.75 log-units, plus small jitter.
-    const q = (pos / Math.max(1, n - 1)) * 2.75 + (rand() - 0.5) * 0.2;
+    // Evenly spaced qualities over ~4 log-units, plus small jitter.
+    const q = (pos / Math.max(1, n - 1)) * 4.0 + (rand() - 0.5) * 0.2;
     quality.set(submissions[subIdx].id, q);
   });
 

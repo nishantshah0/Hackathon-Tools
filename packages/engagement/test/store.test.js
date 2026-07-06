@@ -63,15 +63,15 @@ test('bucketed sparkline series over stored events is correct', () => {
   const store = createStore();
   store.addEvent({ team: 'a', type: 'commit', at: T0 - 10 * 60_000 }); // bucket 47
   store.addEvent({ team: 'a', type: 'discord_message', at: T0 - 40 * 60_000 }); // bucket 46
-  store.addEvent({ team: 'a', type: 'checkin', at: T0 - 12 * 3_600_000 }); // bucket 23
+  store.addEvent({ team: 'a', type: 'checkin', at: T0 - 12 * 3_600_000 }); // bucket 24
   const events = store.eventsForTeam('a', { since: T0 - 24 * 3_600_000, until: T0 });
   const series = bucketSeries(events, T0);
   assert.equal(series[47].count, 1);
   assert.equal(series[47].weight, 3);
   assert.equal(series[46].count, 1);
   assert.equal(series[46].weight, 1);
-  assert.equal(series[23].count, 1);
-  assert.equal(series[23].weight, 2);
+  assert.equal(series[24].count, 1);
+  assert.equal(series[24].weight, 2);
   assert.equal(series.reduce((n, b) => n + b.count, 0), 3);
   store.close();
 });

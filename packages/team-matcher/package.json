@@ -9,7 +9,7 @@
     "team-matcher": "bin/cli.js"
   },
   "scripts": {
-    "test": "node --test test/",
+    "test": "node --test \"test/**/*.test.js\"",
     "demo": "node bin/cli.js match examples/participants.json --team-size 3-4 --min-overlap 4 --seed 42"
   },
   "engines": {

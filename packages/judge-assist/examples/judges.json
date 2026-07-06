@@ -1,0 +1,32 @@
+[
+  {
+    "id": "judge-ada",
+    "name": "Ada Okafor",
+    "expertise": ["kernel", "eBPF", "performance"],
+    "excludedTeams": ["Kernel Panic"]
+  },
+  {
+    "id": "judge-bo",
+    "name": "Bo Lindqvist",
+    "expertise": ["kubernetes", "platform engineering"],
+    "excludedTeams": []
+  },
+  {
+    "id": "judge-cy",
+    "name": "Cy Ramirez",
+    "expertise": ["networking", "security"],
+    "excludedTeams": ["Null Route", "Tunnel Vision"]
+  },
+  {
+    "id": "judge-dee",
+    "name": "Dee Park",
+    "expertise": ["observability", "SRE"],
+    "excludedTeams": []
+  },
+  {
+    "id": "judge-eli",
+    "name": "Eli Fontaine",
+    "expertise": ["databases", "distributed systems"],
+    "excludedTeams": []
+  }
+]

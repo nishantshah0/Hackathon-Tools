@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node --experimental-sqlite bin/server.js",
-    "test": "node --experimental-sqlite --test test/",
+    "test": "node --experimental-sqlite --test \"test/*.test.js\"",
     "demo": "node --experimental-sqlite scripts/simulate.js"
   }
 }
