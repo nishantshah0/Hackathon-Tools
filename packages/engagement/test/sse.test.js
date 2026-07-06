@@ -7,6 +7,8 @@ import { createApp } from '../src/app.js';
 
 const CONFIG = normalizeConfig({
   teams: [{ id: 'team-1', name: 'Byte Bandits', repos: [], members: [] }],
+  // one commit (weight 3) is enough to be "active" in this fixture
+  thresholds: { active: 2, dark: 0.5, darkAfterMinutes: 120 },
 });
 
 function startApp(opts = {}) {
