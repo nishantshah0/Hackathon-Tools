@@ -129,14 +129,14 @@ export function buildBriefRequest(submission, { model = DEFAULT_MODEL } = {}) {
 // ---------------------------------------------------------------------------
 
 const TECH_KEYWORDS = [
-  ["kubernetes", /\bkubernetes\b|\bk8s\b|\bkubectl\b/i],
+  ["Kubernetes", /\bkubernetes\b|\bk8s\b|\bkubectl\b/i],
   ["Terraform", /\bterraform\b/i],
   ["Docker", /\bdocker\b|\bcontainerd\b/i],
   ["eBPF", /\bebpf\b|\bbpf\b/i],
   ["Go", /\bgolang\b|\bgo(?:\s+(?:binary|service|program|module))\b|written in go\b/i],
   ["Rust", /\brust\b|\bcargo\b/i],
   ["Python", /\bpython\b|\bpip\b|\bfastapi\b|\bflask\b/i],
-  ["Node.js", /\bnode(?:\.js)?\b|\bnpm\b|\bexpress\b/i],
+  ["Node.js", /\bnode\.js\b|\bnodejs\b|\bnpm\b|\bexpress\b/i],
   ["TypeScript", /\btypescript\b/i],
   ["React", /\breact\b/i],
   ["PostgreSQL", /\bpostgres(?:ql)?\b/i],
@@ -177,7 +177,16 @@ export function heuristicBrief(submission) {
     .join("\n");
 
   const detected = TECH_KEYWORDS.filter(([, re]) => re.test(corpus)).map(([name]) => name);
-  const techStack = [...new Set([...(submission.techStack || []), ...detected])];
+  // Merge declared + detected, deduping case-insensitively (declared spelling wins).
+  const techStack = [];
+  const seen = new Set();
+  for (const t of [...(submission.techStack || []), ...detected]) {
+    const k = t.toLowerCase();
+    if (!seen.has(k)) {
+      seen.add(k);
+      techStack.push(t);
+    }
+  }
 
   const summary =
     firstSentences(submission.description, 2) ||
