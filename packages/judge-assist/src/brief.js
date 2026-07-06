@@ -301,7 +301,9 @@ export async function generateBrief(submission, { client = null, model = DEFAULT
     brief = heuristicBrief(submission);
   }
 
-  if (cache) cache.data[key] = brief;
+  // Only cache paid (AI) briefs — heuristic briefs are free to recompute and
+  // caching them would pin stale output across heuristic improvements.
+  if (cache && brief.source === "ai") cache.data[key] = brief;
   return brief;
 }
 
