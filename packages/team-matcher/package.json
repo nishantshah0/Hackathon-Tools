@@ -1,0 +1,26 @@
+{
+  "name": "@infrahacks-tools/team-matcher",
+  "version": "1.0.0",
+  "description": "Remote team formation engine for virtual hackathons: forms balanced teams from solo participants using timezone-aware constraints and simulated annealing.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "bin": {
+    "team-matcher": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "demo": "node bin/cli.js match examples/participants.json --team-size 3-4 --min-overlap 4 --seed 42"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "hackathon",
+    "team-formation",
+    "matching",
+    "simulated-annealing",
+    "timezone"
+  ],
+  "license": "MIT"
+}

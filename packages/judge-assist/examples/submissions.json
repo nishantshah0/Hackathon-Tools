@@ -1,0 +1,116 @@
+[
+  {
+    "id": "p01",
+    "team": "Packet Wranglers",
+    "title": "DriftGuard",
+    "description": "DriftGuard continuously diffs your live Kubernetes cluster state against the Terraform and Helm sources that are supposed to define it, and opens an annotated PR the moment reality drifts from code. It classifies drift by blast radius so on-call engineers see the scary changes first.",
+    "repoUrl": "https://github.com/packet-wranglers/driftguard",
+    "techStack": ["Go", "Kubernetes", "Terraform"],
+    "readme": "## DriftGuard\nDetect infra drift before it detects you.\n\n### Quickstart\n```\nhelm install driftguard ./chart --set cluster=prod\ndriftguard scan --source ./terraform --live kubeconfig\n```\nDriftGuard runs as an in-cluster controller. Every 5 minutes it renders your Terraform plan and Helm templates, diffs them against live objects via the k8s API, and pushes a scored drift report to a webhook or GitHub PR.",
+    "videoTranscript": "Hi, we're Packet Wranglers. Here's a live cluster where someone manually bumped a replica count. Watch the dashboard — within a minute DriftGuard flags the deployment, shows the diff against the Terraform source, and opens this PR that either codifies or reverts the change."
+  },
+  {
+    "id": "p02",
+    "team": "Kernel Panic",
+    "title": "FlameLens",
+    "description": "FlameLens is an always-on eBPF profiler that streams flame graphs for every container on a node with under 1% overhead. No agents inside your containers, no code changes — attach it to a node and get per-pod CPU, off-CPU and allocation profiles in Grafana.",
+    "repoUrl": "https://github.com/kernel-panic/flamelens",
+    "techStack": ["Rust", "eBPF", "Grafana"],
+    "readme": "## FlameLens\nZero-instrumentation continuous profiling.\n\n### Run it\n```\nsudo flamelens agent --node $(hostname) --sink grafana:4040\n```\nFlameLens loads CO-RE eBPF programs, aggregates stacks in the kernel, and ships folded stacks over gRPC. Includes a Grafana plugin for diffing profiles across deploys.",
+    "videoTranscript": "This is a node running 40 pods. We start flamelens, open Grafana, and here is a live flame graph per pod. Now we deploy a regression — the diff view highlights exactly the new hot path in the checkout service."
+  },
+  {
+    "id": "p03",
+    "team": "YAML Whisperers",
+    "title": "ManifestMend",
+    "description": "ManifestMend is a CLI and pre-commit hook that auto-fixes broken Kubernetes manifests using a rules engine plus schema-aware patching. It explains every fix in plain English so juniors learn while they ship.",
+    "repoUrl": "https://github.com/yaml-whisperers/manifestmend",
+    "techStack": ["TypeScript", "Node.js"],
+    "readme": "## ManifestMend\n```\nnpx manifestmend fix ./k8s --explain\n```\nFinds 60+ classes of manifest bugs (bad indentation, wrong apiVersion, missing resource limits, impossible probes) and rewrites them in place with a diff and an explanation."
+  },
+  {
+    "id": "p04",
+    "team": "Cold Start Club",
+    "title": "LambdaLocal",
+    "description": "LambdaLocal replays production AWS Lambda traffic against your local checkout with sub-second cold starts, so you can debug serverless functions with real events instead of hand-written fixtures. Includes a time-travel debugger for event chains across SQS and EventBridge.",
+    "repoUrl": "https://github.com/cold-start-club/lambdalocal",
+    "techStack": ["Go", "AWS"],
+    "readme": "## LambdaLocal\n```\nlambdalocal tap --function checkout-prod --sample 5%\nlambdalocal replay --against ./src\n```\nTaps a sampled stream of live Lambda invocations (payloads scrubbed via configurable PII rules), stores them in SQLite, and replays them against your local handler in a Firecracker microVM.",
+    "videoTranscript": "We tap five percent of production traffic for the checkout function. Now I break the handler locally on purpose, replay the last hour of real events, and the time-travel view shows exactly which SQS message chain triggers the failure."
+  },
+  {
+    "id": "p05",
+    "team": "Null Route",
+    "title": "EgressAudit",
+    "description": "EgressAudit maps every outbound connection your fleet makes, attributes it to a process and container image, and generates least-privilege egress network policies automatically. Built on eBPF socket tracing with a ClickHouse backend for fleet-wide queries.",
+    "repoUrl": "https://github.com/null-route/egressaudit",
+    "techStack": ["Go", "eBPF", "ClickHouse"],
+    "readme": "## EgressAudit\n```\negressaudit deploy --fleet prod\negressaudit policy suggest --namespace payments\n```\nRecords (process, container, dst, port, bytes) tuples kernel-side, streams them to ClickHouse, and synthesizes Kubernetes NetworkPolicies or Cilium policies from observed behavior with a configurable observation window."
+  },
+  {
+    "id": "p06",
+    "team": "Bit Flippers",
+    "title": "ChaosCron",
+    "description": "ChaosCron schedules tiny, reversible chaos experiments during business hours and correlates them with your SLOs, so you find weak points without a dedicated chaos team. Ships with 25 experiment templates for Kubernetes, Postgres and Redis.",
+    "repoUrl": "https://github.com/bit-flippers/chaoscron",
+    "techStack": ["Python", "Kubernetes"],
+    "readme": "## ChaosCron\n```\npip install chaoscron\nchaoscron plan --slo-config slo.yaml --budget 0.1%\n```\nReads your SLO error budget, plans experiments sized to consume at most the configured fraction, runs them via the k8s API, and auto-reverts on SLO burn.",
+    "videoTranscript": "Here ChaosCron kills one Redis replica at 2pm. The SLO dashboard stays green, the experiment report says the failover took 3.1 seconds, and the burn was 0.02% of budget. Then it finds a real problem: killing the Postgres pooler breaks checkout for 40 seconds."
+  },
+  {
+    "id": "p07",
+    "team": "Trace Cadets",
+    "title": "SpanSaver",
+    "description": "SpanSaver is a tail-based sampling proxy for OpenTelemetry that keeps 100% of interesting traces (errors, p99 latency, rare routes) while cutting trace storage bills by 90%. Drop-in replacement for the OTel collector's sampling processor.",
+    "repoUrl": "https://github.com/trace-cadets/spansaver",
+    "techStack": ["Go", "OpenTelemetry", "Kafka"],
+    "readme": "## SpanSaver\n```\ndocker run spansaver --upstream otel-collector:4317 --keep errors,p99,rare\n```\nBuffers spans in Kafka until traces complete, scores each trace with pluggable rules, and forwards only the keepers. Includes a replay command to re-score historical traffic and estimate savings before rollout."
+  },
+  {
+    "id": "p08",
+    "team": "Rack City",
+    "title": "BareMetalBuddy",
+    "description": "BareMetalBuddy PXE-boots, benchmarks and burn-in tests bare metal servers, then registers healthy machines into your cluster inventory with full hardware fingerprints. One intern racked and provisioned 12 boxes in an afternoon during our demo.",
+    "repoUrl": "https://github.com/rack-city/baremetalbuddy",
+    "techStack": ["Go", "Ansible"],
+    "readme": "## BareMetalBuddy\n```\nbmb serve --dhcp-range 10.0.9.0/24\nbmb enroll --burn-in 2h --inventory netbox\n```\nServes iPXE, boots a memtest+fio+stress-ng burn-in image, collects SMART/DMI fingerprints, and enrolls passing machines into NetBox and Kubernetes via Ansible."
+  },
+  {
+    "id": "p09",
+    "team": "Cache Money",
+    "title": "WarmFront",
+    "description": "WarmFront predicts which cache keys will be requested after a deploy and pre-warms Redis before traffic shifts, eliminating post-deploy latency spikes. It learns key access patterns from production traffic with a simple Markov model — no ML infrastructure needed.",
+    "repoUrl": "https://github.com/cache-money/warmfront",
+    "techStack": ["Rust", "Redis"],
+    "readme": "## WarmFront\n```\nwarmfront learn --redis prod:6379 --window 7d\nwarmfront warm --target canary:6379 --top 50k\n```\nSamples Redis keyspace notifications, builds a transition model of key co-access, and on deploy warms the new cache tier from a ranked key list."
+  },
+  {
+    "id": "p10",
+    "team": "Tunnel Vision",
+    "title": "MeshMule",
+    "description": "MeshMule gives every dev laptop a WireGuard-based service mesh identity so local services can securely join staging clusters. Test your local branch against real staging dependencies without deploying, with per-developer routing rules.",
+    "repoUrl": "https://github.com/tunnel-vision/meshmule",
+    "techStack": ["Go", "WireGuard", "Envoy"],
+    "readme": "## MeshMule\n```\nmeshmule join staging --route 'orders-svc -> localhost:8080'\n```\nIssues short-lived WireGuard identities via your SSO, injects an Envoy sidecar config into staging, and routes only YOUR requests to your laptop — everyone else still hits the deployed service.",
+    "videoTranscript": "I run meshmule join, put my laptop's orders service on the route, and hit the staging frontend from my phone. My request flows through staging but the orders call lands on my laptop breakpoint. My teammate's requests are untouched."
+  },
+  {
+    "id": "p11",
+    "team": "Log Jam",
+    "title": "GrepFleet",
+    "description": "GrepFleet is distributed grep for your whole fleet: a query fans out to lightweight agents over NATS, streams matches back with backpressure, and costs nothing when idle. Think 'kubectl logs' meets ripgrep, for 5000 nodes.",
+    "repoUrl": "https://github.com/log-jam/grepfleet",
+    "techStack": ["Rust", "NATS"],
+    "readme": "## GrepFleet\n```\ngrepfleet 'panic|OOM' --fleet prod --since 1h --limit 10k\n```\nAgents run ripgrep locally against journald and container logs, results stream back over NATS with per-node rate limits. No central log storage required."
+  },
+  {
+    "id": "p12",
+    "team": "Quorum Sense",
+    "title": "RaftRadar",
+    "description": "RaftRadar visualizes consensus health for etcd, Consul and NATS JetStream clusters in real time: election churn, replication lag, and a what-if simulator that shows what happens to quorum if you lose any given zone.",
+    "repoUrl": "https://github.com/quorum-sense/raftradar",
+    "techStack": ["TypeScript", "React", "Go"],
+    "readme": "## RaftRadar\n```\nraftradar watch --etcd https://etcd-0:2379 --ui :7000\n```\nPolls Raft metrics endpoints, renders a live topology with leader/follower state, and simulates zone loss: drag a zone offline in the UI and see which groups lose quorum.",
+    "videoTranscript": "This is our production etcd. See the election storm at 14:02 — RaftRadar correlates it with a network partition in zone C. Now the what-if view: if we lose zone A tomorrow, these two JetStream streams drop below quorum."
+  }
+]

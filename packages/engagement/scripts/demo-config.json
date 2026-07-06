@@ -1,0 +1,26 @@
+{
+  "teams": [
+    { "id": "team-01", "name": "Byte Bandits", "repos": ["infrahacks-demo/byte-bandits"], "members": ["ada", "grace"] },
+    { "id": "team-02", "name": "Null Pointers", "repos": ["infrahacks-demo/null-pointers"], "members": ["linus", "margaret"] },
+    { "id": "team-03", "name": "Sleepless Sockets", "repos": ["infrahacks-demo/sleepless-sockets"], "members": ["dennis", "ken"] },
+    { "id": "team-04", "name": "Rusty Ferrets", "repos": ["infrahacks-demo/rusty-ferrets"], "members": ["graydon", "ashley"] },
+    { "id": "team-05", "name": "Kernel Panic", "repos": ["infrahacks-demo/kernel-panic"], "members": ["andrew", "brenda"] },
+    { "id": "team-06", "name": "Async Ducks", "repos": ["infrahacks-demo/async-ducks"], "members": ["ryan", "isaac"] },
+    { "id": "team-07", "name": "Segfault Society", "repos": ["infrahacks-demo/segfault-society"], "members": ["bjarne", "barbara"] },
+    { "id": "team-08", "name": "Cache Money", "repos": ["infrahacks-demo/cache-money"], "members": ["phil", "leslie"] },
+    { "id": "team-09", "name": "Mutex Crew", "repos": ["infrahacks-demo/mutex-crew"], "members": ["edsger", "tony"] },
+    { "id": "team-10", "name": "Ghost Shell", "repos": ["infrahacks-demo/ghost-shell"], "members": ["kevin", "joan"] }
+  ],
+  "thresholds": {
+    "active": 15,
+    "dark": 4,
+    "darkAfterMinutes": 2
+  },
+  "halfLifeHours": 0.02,
+  "weights": {
+    "commit": 3,
+    "discord_message": 1,
+    "portal_login": 0.5,
+    "checkin": 2
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@infrahacks-tools/submission-verifier",
+  "version": "1.0.0",
+  "description": "Git forensics for hackathon rule enforcement: analyze a submitted repo against the event window and produce an integrity risk report.",
+  "type": "module",
+  "bin": {
+    "submission-verifier": "bin/cli.js"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test test/",
+    "demo": "node scripts/make-fixture.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

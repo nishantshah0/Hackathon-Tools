@@ -1,0 +1,28 @@
+{
+  "teams": [
+    {
+      "id": "team-1",
+      "name": "Byte Bandits",
+      "repos": ["infrahacks-demo/byte-bandits"],
+      "members": ["ada", "grace"]
+    },
+    {
+      "id": "team-2",
+      "name": "Null Pointers",
+      "repos": ["infrahacks-demo/null-pointers"],
+      "members": ["linus", "margaret"]
+    }
+  ],
+  "thresholds": {
+    "active": 6,
+    "dark": 2,
+    "darkAfterMinutes": 120
+  },
+  "halfLifeHours": 3,
+  "weights": {
+    "commit": 3,
+    "discord_message": 1,
+    "portal_login": 0.5,
+    "checkin": 2
+  }
+}
