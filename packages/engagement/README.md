@@ -25,9 +25,9 @@ POST /events ──────────┼──▶ src/store.js ──▶ s
   team, and appended to the store.
 - **Store** (`src/store.js`): the only stateful layer, hidden behind a small
   interface (`addEvent`, `eventsForTeam`, `lastSeenByType`, `addAlert`, ...).
-  Backend is **`node:sqlite` (`DatabaseSync`)** — verified working on Node 22 with
-  the `--experimental-sqlite` flag, which is baked into every npm script. Swap the
-  backend by reimplementing that interface.
+  Backend is **`node:sqlite` (`DatabaseSync`)** — needs the `--experimental-sqlite`
+  flag on Node 22, which is baked into every npm script. Swap the backend by
+  reimplementing that interface.
 - **Score** (`src/score.js`): pure functions. Every event has a weight
   (commit 3, discord_message 1, portal_login 0.5, checkin 2 — configurable); the
   engagement score is the sum of weights with exponential time decay
