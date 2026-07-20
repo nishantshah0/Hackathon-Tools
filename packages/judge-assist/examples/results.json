@@ -1,0 +1,202 @@
+[
+  {
+    "judge": "judge-ada",
+    "winner": "p01",
+    "loser": "p03"
+  },
+  {
+    "judge": "judge-bo",
+    "winner": "p04",
+    "loser": "p12"
+  },
+  {
+    "judge": "judge-cy",
+    "winner": "p09",
+    "loser": "p08"
+  },
+  {
+    "judge": "judge-dee",
+    "winner": "p10",
+    "loser": "p11"
+  },
+  {
+    "judge": "judge-eli",
+    "winner": "p02",
+    "loser": "p07"
+  },
+  {
+    "judge": "judge-ada",
+    "winner": "p06",
+    "loser": "p05"
+  },
+  {
+    "judge": "judge-bo",
+    "winner": "p03",
+    "loser": "p09"
+  },
+  {
+    "judge": "judge-cy",
+    "winner": "p02",
+    "loser": "p11"
+  },
+  {
+    "judge": "judge-dee",
+    "winner": "p12",
+    "loser": "p01"
+  },
+  {
+    "judge": "judge-eli",
+    "winner": "p10",
+    "loser": "p08"
+  },
+  {
+    "judge": "judge-ada",
+    "winner": "p04",
+    "loser": "p07"
+  },
+  {
+    "judge": "judge-bo",
+    "winner": "p05",
+    "loser": "p06"
+  },
+  {
+    "judge": "judge-cy",
+    "winner": "p06",
+    "loser": "p07"
+  },
+  {
+    "judge": "judge-dee",
+    "winner": "p04",
+    "loser": "p09"
+  },
+  {
+    "judge": "judge-eli",
+    "winner": "p12",
+    "loser": "p03"
+  },
+  {
+    "judge": "judge-ada",
+    "winner": "p11",
+    "loser": "p08"
+  },
+  {
+    "judge": "judge-bo",
+    "winner": "p02",
+    "loser": "p01"
+  },
+  {
+    "judge": "judge-cy",
+    "winner": "p04",
+    "loser": "p01"
+  },
+  {
+    "judge": "judge-dee",
+    "winner": "p05",
+    "loser": "p10"
+  },
+  {
+    "judge": "judge-eli",
+    "winner": "p05",
+    "loser": "p11"
+  },
+  {
+    "judge": "judge-ada",
+    "winner": "p10",
+    "loser": "p09"
+  },
+  {
+    "judge": "judge-bo",
+    "winner": "p07",
+    "loser": "p08"
+  },
+  {
+    "judge": "judge-cy",
+    "winner": "p12",
+    "loser": "p03"
+  },
+  {
+    "judge": "judge-dee",
+    "winner": "p02",
+    "loser": "p06"
+  },
+  {
+    "judge": "judge-eli",
+    "winner": "p01",
+    "loser": "p09"
+  },
+  {
+    "judge": "judge-ada",
+    "winner": "p06",
+    "loser": "p12"
+  },
+  {
+    "judge": "judge-bo",
+    "winner": "p10",
+    "loser": "p11"
+  },
+  {
+    "judge": "judge-cy",
+    "winner": "p08",
+    "loser": "p03"
+  },
+  {
+    "judge": "judge-dee",
+    "winner": "p05",
+    "loser": "p07"
+  },
+  {
+    "judge": "judge-eli",
+    "winner": "p02",
+    "loser": "p04"
+  },
+  {
+    "judge": "judge-ada",
+    "winner": "p12",
+    "loser": "p08"
+  },
+  {
+    "judge": "judge-bo",
+    "winner": "p07",
+    "loser": "p03"
+  },
+  {
+    "judge": "judge-cy",
+    "winner": "p06",
+    "loser": "p01"
+  },
+  {
+    "judge": "judge-dee",
+    "winner": "p02",
+    "loser": "p09"
+  },
+  {
+    "judge": "judge-eli",
+    "winner": "p04",
+    "loser": "p05"
+  },
+  {
+    "judge": "judge-ada",
+    "winner": "p10",
+    "loser": "p11"
+  },
+  {
+    "judge": "judge-bo",
+    "winner": "p12",
+    "loser": "p11"
+  },
+  {
+    "judge": "judge-cy",
+    "winner": "p02",
+    "loser": "p09"
+  },
+  {
+    "judge": "judge-dee",
+    "winner": "p08",
+    "loser": "p03"
+  },
+  {
+    "judge": "judge-eli",
+    "winner": "p01",
+    "loser": "p06"
+  }
+]

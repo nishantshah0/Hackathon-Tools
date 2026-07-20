@@ -1,0 +1,242 @@
+[
+  {
+    "id": "p01",
+    "name": "Ava Thompson",
+    "roles": ["frontend"],
+    "skills": ["react", "typescript", "css", "vite"],
+    "interests": ["ai-agents", "devtools"],
+    "timezone": "America/New_York",
+    "availability": [{ "start": 9, "end": 18 }],
+    "experience": 4
+  },
+  {
+    "id": "p02",
+    "name": "Marcus Lee",
+    "roles": ["backend"],
+    "skills": ["node", "postgres", "redis", "graphql"],
+    "interests": ["ai-agents", "fintech"],
+    "timezone": "America/New_York",
+    "availability": [{ "start": 10, "end": 22 }],
+    "experience": 3
+  },
+  {
+    "id": "p03",
+    "name": "Sofia Ramirez",
+    "roles": ["design", "frontend"],
+    "skills": ["figma", "css", "svelte"],
+    "interests": ["health", "social"],
+    "timezone": "America/Chicago",
+    "availability": [{ "start": 8, "end": 17 }],
+    "experience": 2
+  },
+  {
+    "id": "p04",
+    "name": "Jake Miller",
+    "roles": ["infra"],
+    "skills": ["k8s", "terraform", "aws", "go"],
+    "interests": ["devtools", "security"],
+    "timezone": "America/New_York",
+    "availability": [{ "start": 11, "end": 23 }],
+    "experience": 5
+  },
+  {
+    "id": "p05",
+    "name": "Emily Chen",
+    "roles": ["ml"],
+    "skills": ["python", "pytorch", "pandas"],
+    "interests": ["ai-agents", "health"],
+    "timezone": "America/Los_Angeles",
+    "availability": [{ "start": 9, "end": 20 }],
+    "experience": 3
+  },
+  {
+    "id": "p06",
+    "name": "Diego Alvarez",
+    "roles": ["backend", "infra"],
+    "skills": ["go", "docker", "postgres"],
+    "interests": ["climate", "devtools"],
+    "timezone": "America/Los_Angeles",
+    "availability": [{ "start": 10, "end": 24 }],
+    "experience": 4
+  },
+  {
+    "id": "p07",
+    "name": "Hannah Fischer",
+    "roles": ["frontend"],
+    "skills": ["vue", "typescript", "tailwind"],
+    "interests": ["climate", "edtech"],
+    "timezone": "America/Toronto",
+    "availability": [{ "start": 9, "end": 21 }],
+    "experience": 1
+  },
+  {
+    "id": "p08",
+    "name": "Lucas Oliveira",
+    "roles": ["mobile"],
+    "skills": ["kotlin", "swift", "react-native"],
+    "interests": ["fintech", "social"],
+    "timezone": "America/Sao_Paulo",
+    "availability": [{ "start": 10, "end": 22 }],
+    "experience": 3
+  },
+  {
+    "id": "p09",
+    "name": "Oliver Hughes",
+    "roles": ["backend"],
+    "skills": ["python", "django", "postgres", "celery"],
+    "interests": ["fintech", "security"],
+    "timezone": "Europe/London",
+    "availability": [{ "start": 9, "end": 19 }],
+    "experience": 4
+  },
+  {
+    "id": "p10",
+    "name": "Freya Nilsen",
+    "roles": ["design"],
+    "skills": ["figma", "illustrator", "css"],
+    "interests": ["edtech", "social"],
+    "timezone": "Europe/London",
+    "availability": [{ "start": 8, "end": 18 }],
+    "experience": 2
+  },
+  {
+    "id": "p11",
+    "name": "Jonas Weber",
+    "roles": ["infra", "backend"],
+    "skills": ["k8s", "rust", "grpc", "prometheus"],
+    "interests": ["devtools", "security"],
+    "timezone": "Europe/Berlin",
+    "availability": [{ "start": 10, "end": 23 }],
+    "experience": 5
+  },
+  {
+    "id": "p12",
+    "name": "Clara Dubois",
+    "roles": ["frontend"],
+    "skills": ["react", "nextjs", "css"],
+    "interests": ["edtech", "gaming"],
+    "timezone": "Europe/Paris",
+    "availability": [{ "start": 9, "end": 20 }],
+    "experience": 2
+  },
+  {
+    "id": "p13",
+    "name": "Mateo Garcia",
+    "roles": ["ml", "backend"],
+    "skills": ["python", "scikit-learn", "fastapi"],
+    "interests": ["ai-agents", "fintech"],
+    "timezone": "Europe/Madrid",
+    "availability": [{ "start": 11, "end": 24 }],
+    "experience": 3
+  },
+  {
+    "id": "p14",
+    "name": "Zofia Kowalska",
+    "roles": ["backend"],
+    "skills": ["java", "spring", "kafka"],
+    "interests": ["climate", "fintech"],
+    "timezone": "Europe/Warsaw",
+    "availability": [{ "start": 8, "end": 20 }],
+    "experience": 4
+  },
+  {
+    "id": "p15",
+    "name": "Tomas Novak",
+    "roles": ["frontend", "design"],
+    "skills": ["svelte", "figma", "threejs"],
+    "interests": ["gaming", "ai-agents"],
+    "timezone": "Europe/Prague",
+    "availability": [{ "start": 12, "end": 26 }],
+    "experience": 1
+  },
+  {
+    "id": "p16",
+    "name": "Amara Okafor",
+    "roles": ["backend"],
+    "skills": ["node", "mongodb", "graphql"],
+    "interests": ["health", "edtech"],
+    "timezone": "Africa/Lagos",
+    "availability": [{ "start": 9, "end": 21 }],
+    "experience": 2
+  },
+  {
+    "id": "p17",
+    "name": "Priya Sharma",
+    "roles": ["frontend"],
+    "skills": ["react", "typescript", "redux"],
+    "interests": ["ai-agents", "devtools"],
+    "timezone": "Asia/Kolkata",
+    "availability": [{ "start": 10, "end": 22 }],
+    "experience": 3
+  },
+  {
+    "id": "p18",
+    "name": "Arjun Patel",
+    "roles": ["ml"],
+    "skills": ["python", "pytorch", "huggingface"],
+    "interests": ["ai-agents", "health"],
+    "timezone": "Asia/Kolkata",
+    "availability": [{ "start": 9, "end": 20 }],
+    "experience": 5
+  },
+  {
+    "id": "p19",
+    "name": "Ananya Iyer",
+    "roles": ["backend", "infra"],
+    "skills": ["go", "k8s", "postgres"],
+    "interests": ["devtools", "fintech"],
+    "timezone": "Asia/Kolkata",
+    "availability": [{ "start": 14, "end": 26 }],
+    "experience": 2
+  },
+  {
+    "id": "p20",
+    "name": "Wei Zhang",
+    "roles": ["backend"],
+    "skills": ["python", "fastapi", "redis"],
+    "interests": ["ai-agents", "gaming"],
+    "timezone": "Asia/Singapore",
+    "availability": [{ "start": 9, "end": 21 }],
+    "experience": 4
+  },
+  {
+    "id": "p21",
+    "name": "Yuki Tanaka",
+    "roles": ["frontend", "mobile"],
+    "skills": ["react-native", "swift", "typescript"],
+    "interests": ["gaming", "social"],
+    "timezone": "Asia/Tokyo",
+    "availability": [{ "start": 9, "end": 22 }],
+    "experience": 3
+  },
+  {
+    "id": "p22",
+    "name": "Haruto Sato",
+    "roles": ["infra"],
+    "skills": ["aws", "terraform", "go"],
+    "interests": ["devtools", "climate"],
+    "timezone": "Asia/Tokyo",
+    "availability": [{ "start": 8, "end": 19 }],
+    "experience": 4
+  },
+  {
+    "id": "p23",
+    "name": "Min-jun Kim",
+    "roles": ["design", "frontend"],
+    "skills": ["figma", "css", "react"],
+    "interests": ["social", "ai-agents"],
+    "timezone": "Asia/Seoul",
+    "availability": [{ "start": 10, "end": 23 }],
+    "experience": 1
+  },
+  {
+    "id": "p24",
+    "name": "Isla MacLeod",
+    "roles": ["ml"],
+    "skills": ["python", "jax"],
+    "interests": ["climate", "ai-agents"],
+    "timezone": "Pacific/Auckland",
+    "availability": [{ "start": 22, "end": 24 }],
+    "experience": 5
+  }
+]

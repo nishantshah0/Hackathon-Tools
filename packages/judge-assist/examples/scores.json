@@ -1,0 +1,362 @@
+[
+  {
+    "judge": "judge-ada",
+    "project": "p01",
+    "criterion": "technical",
+    "score": 7
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p01",
+    "criterion": "design",
+    "score": 7.5
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p02",
+    "criterion": "technical",
+    "score": 9
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p02",
+    "criterion": "design",
+    "score": 8.5
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p04",
+    "criterion": "technical",
+    "score": 7.5
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p04",
+    "criterion": "design",
+    "score": 7.5
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p06",
+    "criterion": "technical",
+    "score": 6
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p06",
+    "criterion": "design",
+    "score": 5.5
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p09",
+    "criterion": "technical",
+    "score": 5.5
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p09",
+    "criterion": "design",
+    "score": 5.5
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p12",
+    "criterion": "technical",
+    "score": 6.5
+  },
+  {
+    "judge": "judge-ada",
+    "project": "p12",
+    "criterion": "design",
+    "score": 7
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p03",
+    "criterion": "technical",
+    "score": 6.5
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p03",
+    "criterion": "design",
+    "score": 6.5
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p05",
+    "criterion": "technical",
+    "score": 10
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p05",
+    "criterion": "design",
+    "score": 10
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p08",
+    "criterion": "technical",
+    "score": 7
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p08",
+    "criterion": "design",
+    "score": 6
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p09",
+    "criterion": "technical",
+    "score": 8
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p09",
+    "criterion": "design",
+    "score": 7
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p11",
+    "criterion": "technical",
+    "score": 7
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p11",
+    "criterion": "design",
+    "score": 6.5
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p12",
+    "criterion": "technical",
+    "score": 8
+  },
+  {
+    "judge": "judge-bo",
+    "project": "p12",
+    "criterion": "design",
+    "score": 8.5
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p01",
+    "criterion": "technical",
+    "score": 5
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p01",
+    "criterion": "design",
+    "score": 4.5
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p02",
+    "criterion": "technical",
+    "score": 6
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p02",
+    "criterion": "design",
+    "score": 6.5
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p03",
+    "criterion": "technical",
+    "score": 2.5
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p03",
+    "criterion": "design",
+    "score": 2
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p04",
+    "criterion": "technical",
+    "score": 6
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p04",
+    "criterion": "design",
+    "score": 5.5
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p07",
+    "criterion": "technical",
+    "score": 3
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p07",
+    "criterion": "design",
+    "score": 4.5
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p08",
+    "criterion": "technical",
+    "score": 2
+  },
+  {
+    "judge": "judge-cy",
+    "project": "p08",
+    "criterion": "design",
+    "score": 2
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p05",
+    "criterion": "technical",
+    "score": 8.5
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p05",
+    "criterion": "design",
+    "score": 8.5
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p06",
+    "criterion": "technical",
+    "score": 6
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p06",
+    "criterion": "design",
+    "score": 6.5
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p07",
+    "criterion": "technical",
+    "score": 7
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p07",
+    "criterion": "design",
+    "score": 6.5
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p10",
+    "criterion": "technical",
+    "score": 7.5
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p10",
+    "criterion": "design",
+    "score": 7.5
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p11",
+    "criterion": "technical",
+    "score": 5.5
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p11",
+    "criterion": "design",
+    "score": 5.5
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p12",
+    "criterion": "technical",
+    "score": 6.5
+  },
+  {
+    "judge": "judge-dee",
+    "project": "p12",
+    "criterion": "design",
+    "score": 7
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p01",
+    "criterion": "technical",
+    "score": 7
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p01",
+    "criterion": "design",
+    "score": 7
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p03",
+    "criterion": "technical",
+    "score": 4
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p03",
+    "criterion": "design",
+    "score": 5.5
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p06",
+    "criterion": "technical",
+    "score": 5
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p06",
+    "criterion": "design",
+    "score": 6
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p08",
+    "criterion": "technical",
+    "score": 4.5
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p08",
+    "criterion": "design",
+    "score": 3.5
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p10",
+    "criterion": "technical",
+    "score": 7
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p10",
+    "criterion": "design",
+    "score": 7.5
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p11",
+    "criterion": "technical",
+    "score": 5.5
+  },
+  {
+    "judge": "judge-eli",
+    "project": "p11",
+    "criterion": "design",
+    "score": 4.5
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "@infrahacks/engagement",
+  "version": "0.1.0",
+  "description": "Who's-going-dark engagement dashboard for remote hackathons: ingest activity signals, score with time decay, surface stalling teams live.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --experimental-sqlite bin/server.js",
+    "test": "node --experimental-sqlite --test \"test/*.test.js\"",
+    "demo": "node --experimental-sqlite scripts/simulate.js"
+  }
+}
